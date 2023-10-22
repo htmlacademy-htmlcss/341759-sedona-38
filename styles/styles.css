@@ -71,8 +71,12 @@ body {
 }
 
 .page_header_logo {
+  position: relative;
   width: 138px;
+  height: 70px;
   margin-right: 30px;
+  margin-bottom: -6px;
+
 }
 
 .page_header {
@@ -132,7 +136,7 @@ body {
 .welcome {
   display: block;
   margin: 0 auto;
-  margin-bottom: 82px;
+  padding-bottom: 82px;
 }
 
 .advantages {
@@ -141,7 +145,7 @@ body {
 }
 
 .tagline {
-  margin: 0 ;
+  margin: 0 auto;
   padding: 0 30px 20px;
   font-size: 30px;
   font-weight: 700;
@@ -150,13 +154,19 @@ body {
   color: #000000;
 }
 
+.advantages .tagline {
+  max-width: 620px;
+}
+
 .description {
-  margin: 0;
-  padding: 0 25px;
+  margin: 0 auto;
+  padding: 0;
+
 }
 
 .advantages .description {
-  padding: 5px 0 90px;
+  padding: 5px 30px 90px;
+  max-width: 652px;
 }
 
 .subscribe_tagline {
@@ -173,7 +183,7 @@ body {
 }
 
 .advantages_item {
-  background-color: #83B3D3;
+  background-color: #E6F0F6;
   width: 400px;
   align-items: center;
   min-height: 385px;
@@ -182,6 +192,23 @@ body {
 .advantages_item_full {
   display: flex;
   width: 100%;
+  background-color: #82B3D3;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages_wrapper {
+  width: 400px;
+}
+
+.advantages_item_plate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantages_item_plate:not(:nth-child(3n)) {
+  background-color: #F0F6FA;
 }
 
 .advantages_title {
@@ -192,15 +219,17 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  padding: 0 85px;
-  margin-bottom: 62px;
-
+  margin: 0 auto;
+  padding: 50px 0px 62px;
+  width: 230px;
 }
 
 .advantages_description {
   padding: 0;
-  margin: 0;
-  padding: 0 85px;
+  margin: 0 auto;
+  padding: 0 0px 50px;
+  width: 230px;
+
 }
 
 .advantages_light {
@@ -217,8 +246,13 @@ body {
   padding-top: 64px;
 }
 
+.services .tagline {
+  max-width: 506px;
+}
+
 .services .description {
-  padding-bottom: 64px;
+  padding:0 30px 64px;
+  max-width: 506px;
 }
 
 .services_list {
@@ -233,11 +267,13 @@ body {
   width: 400px;
   align-items: center;
   min-height: 385px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .services_item:nth-child(odd) {
-  background-color: #83B3D3;
+  background-color: #F0F6FA;
 }
 
 .services_title {
@@ -246,28 +282,33 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
-  padding: 0 85px 30px;
+  margin: 0 auto;
+  padding: 50px 20px 30px;
+  width: 230px;
 
 
 }
 
 .services_description {
   padding: 0;
-  margin: 0;
-  padding: 0 85px;
+  margin: 0 auto;
+  padding: 0 20px 50px;
   font-size: 18px;
   line-height: 21px;
-  padding-bottom: 81px;
+  width: 230px;
+
 }
 
 .search {
   text-align: center;
-  padding: 69px 25px;
+  padding: 69px 30px 96px;
+  max-width: 592px;
+  margin: 0 auto;
 }
 
 .search .description {
-  padding-bottom: 54px;
+  padding: 0 0px 54px;
+
 }
 
 .subscribe {
@@ -280,8 +321,15 @@ body {
   padding-top: 96px;
 }
 
+.subscribe .tagline {
+  max-width: 475px;
+
+}
+
 .subscribe .description {
-  padding-bottom: 54px;
+  padding: 0 30px 54px;
+  max-width: 475px;
+
 }
 
 .subscribe_inner {
@@ -289,8 +337,14 @@ body {
   text-align: center;
 }
 
+.subscribe_inner .tagline {
+  max-width: 475px;
+
+}
+
 .subscribe_inner .description {
-  padding-bottom: 54px;
+  padding: 0 30px 54px;
+  max-width: 475px;
 }
 
 .subscription-form {
@@ -313,6 +367,13 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.icon {
+  display: block;
   width: 47px;
   height: 40px;
 }
@@ -448,6 +509,11 @@ body {
 .heading {
   margin: 0;
   padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .sorting {
@@ -476,43 +542,89 @@ border-radius: 4px;
 
 .product_list {
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 70px;
+  margin: 0 70px 40px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
 }
 
 .product_card {
-  margin: 0;
-  padding: 0px;
   list-style-type: none;
-  width: 340px;
   border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 212px min-content 21px min-content 37px;
+  grid-template-columns: 140px 140px;
+  gap: 16px;
 }
 
-.heading {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #000000;
+.card_image {
+  grid-column: 1 / -1;
 }
 
 .card_link {
+  text-decoration: none;
+  grid-column: 1 / -1;
+}
+
+.card_title {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   color: #000000;
-  text-decoration: none;
 }
 
 .card_name {
   font-size: 18px;
   line-height: 21px;
+
 }
 
 .card_price {
   font-size: 18px;
   line-height: 21px;
+  justify-self: end;
+}
+
+.button_more_details {
+  justify-self: start;
+}
+
+.button_favorites {
+  justify-self: end;
+}
+
+.stars {
+  align-self: center;
+}
+.rating {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 9px 9px 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  align-self: center;
+  width: 140px;
+  box-sizing: border-box;
+}
+
+.card_name,
+.button_more_details,
+.stars {
+  grid-column: 1 / 2;
+}
+
+.card_price,
+.button_favorites,
+.rating {
+  grid-column: 2 / 3;
 }
 
 .pagination {
@@ -526,7 +638,7 @@ border-radius: 4px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: 60px;
+
 }
 
 .pagination_item:not(:last-child) {
@@ -536,14 +648,14 @@ border-radius: 4px;
 .pagination_link {
   display: block;
   box-sizing: border-box;
-  padding: 12px 0;
+  padding: 12px 10px;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   color: #000000;
   text-decoration: none;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background-color: #83B3D3;
   border-radius: 4px;
