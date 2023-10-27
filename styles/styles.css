@@ -124,8 +124,8 @@ body {
 
 }
 
-.main_index {
-  background-color: #fff;
+.hero {
+  background-color: #223038;
   background-image: url("../images/index_background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -347,7 +347,7 @@ body {
   max-width: 475px;
 }
 
-.subscription-form {
+.subscription_form {
   padding-bottom: 104px;
 }
 
@@ -518,14 +518,16 @@ body {
 
 .sorting {
   display: flex;
-
-
 }
 
 .select_control {
 margin-right: 70px;
 min-width: 292px;
 border-radius: 4px;
+}
+
+.sorting_button_group{
+  display:flex;
 }
 
 .sorting_button  {
@@ -557,13 +559,14 @@ border-radius: 4px;
   grid-template-rows: 212px min-content 21px min-content 37px;
   grid-template-columns: 140px 140px;
   gap: 16px;
+
 }
 
 .card_image {
   grid-column: 1 / -1;
 }
 
-.card_link {
+.card {
   text-decoration: none;
   grid-column: 1 / -1;
 }
@@ -590,10 +593,12 @@ border-radius: 4px;
 }
 
 .button_more_details {
+  width: 140px;
   justify-self: start;
 }
 
 .button_favorites {
+  width: 140px;
   justify-self: end;
 }
 

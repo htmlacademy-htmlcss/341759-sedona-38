@@ -130,26 +130,29 @@
                 <option value="popular">Сначала популярные</option>
                 <option value="expensive">Сначала дорогие</option>
               </select>
-              <a class="sorting_button" href="#">
-                <span class="visually_hidden">Показать плиткой</span>
-              </a>
-              <a class="sorting_button" href="#">
-                <span class="visually_hidden">Показать во весь экран</span>
-              </a>
-              <a class="sorting_button" href="#">
-                <span class="visually_hidden">Показать список</span>
-              </a>
+              <div class="sorting_button_group">
+                <a class="sorting_button" href="#">
+                  <span class="visually_hidden">Показать плиткой</span>
+                </a>
+                <a class="sorting_button" href="#">
+                  <span class="visually_hidden">Показать во весь экран</span>
+                </a>
+                <a class="sorting_button" href="#">
+                  <span class="visually_hidden">Показать список</span>
+                </a>
+              </div>
+
             </div>
           </div>
 
           <ul class="product_list">
             <li class="product_card">
-              <a class="card_link" href="#" tabindex="-1">
+              <a class="card card_link" href="#" tabindex="-1">
                 <img class="card_image" src="images/catalog/hotel_1.jpg" width="300" height="212" alt="Ущелье">
               </a>
-              <a class="card_link" href="#" tabindex="-1">
-                <h3 class="card_title">Amara Resort &amp; Spa</h3>
-              </a>
+              <h3 class="card card_title">
+                <a class="card_link" href="#" tabindex="-1">Amara Resort &amp; Spa</a>
+              </h3>
               <span class="card_name">Гостиница</span>
               <span class="card_price">От 4000 ₽</span>
               <a class="button" href="#">Подробнее</a>
@@ -161,9 +164,9 @@
               <a class="card_link" href="#" tabindex="-1">
                 <img class="card_image" src="images/catalog/hotel_2.jpg" width="300" height="212" alt="Ночные горы с радугой">
               </a>
-              <a class="card_link" href="#" tabindex="-1">
-                <h3 class="card_title">Villas at Poco Diablo</h3>
-              </a>
+              <h3 class="card card_title">
+                <a class="card_link" href="#" tabindex="-1">Villas at Poco Diablo</a>
+              </h3>
               <span class="card_name">Гостиница</span>
               <span class="card_price">От 5000 ₽</span>
               <a class="button" href="#">Подробнее</a>
@@ -175,9 +178,9 @@
               <a class="card_link" href="#" tabindex="-1">
                 <img class="card_image" src="images/catalog/hotel_3.jpg" width="300" height="212" alt="Горы днем">
               </a>
-              <a class="card_link" href="#" tabindex="-1">
-                <h3 class="card_title">Desert Quail Inn</h3>
-              </a>
+              <h3 class="card card_title">
+                <a class="card_link" href="#" tabindex="-1">Desert Quail Inn</a>
+              </h3>
               <span class="card_name">Гостиница</span>
               <span class="card_price">От 2500 ₽</span>
               <a class="button" href="#">Подробнее</a>
@@ -189,9 +192,9 @@
               <a class="card_link" href="#" tabindex="-1">
                 <img class="card_image" src="images/catalog/hotel_4.jpg" width="300" height="212" alt="Горы на фоне ночного неба">
               </a>
-              <a class="card_link" href="#" tabindex="-1">
-                <h3 class="card_title">GreenTree Inn</h3>
-              </a>
+              <h3 class="card card_title">
+                <a class="card_link" href="#" tabindex="-1">GreenTree Inn</a>
+              </h3>
               <span class="card_name">Гостиница</span>
               <span class="card_price">От 1500 ₽</span>
               <a class="button" href="#">Подробнее</a>
@@ -225,7 +228,7 @@
         <section class="subscribe_inner">
           <h2 class="tagline">Подпишитесь на&nbsp;рассылку</h2>
           <p class="description">Только полезная информация и&nbsp;никакого спама, <br/>честное бойскаутское!</p>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post" >
+          <form class="subscription_form" action="https://echo.htmlacademy.ru/" method="post" >
             <label class="visually_hidden" for="user_email">Ваш e-mail</label>
             <input type="email" id="user_email" name="subscription_email" placeholder="Ваш e-mail" >
             <button class="button subscribe_button" type="submit">Подписаться</button>
