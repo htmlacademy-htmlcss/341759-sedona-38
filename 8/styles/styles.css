@@ -160,7 +160,7 @@ background-color: #82B3D3;
 .navigation_link_current::before {
   position: absolute;
   right: 16px;
-  bottom: 0;
+  bottom: -1px;
   left: 16px;
   height: 2px;
   background-color: #756257;
@@ -340,12 +340,11 @@ background-color: #82B3D3;
   color: #ffffff;
 }
 
-.advantages_item_full .advantages_wrapper .advantages_light::before {
+.advantages_item_full .advantages_wrapper .advantages_title::before {
   position: absolute;
   left: 85px;
   right: 16px;
   bottom: 30px;
-
   width: 60px;
   height: 2px;
   background-color: rgb(255, 255, 255, 0.3);
