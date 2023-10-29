@@ -160,7 +160,7 @@ background-color: #82B3D3;
 .navigation_link_current::before {
   position: absolute;
   right: 16px;
-  bottom: 0;
+  bottom: -1px;
   left: 16px;
   height: 2px;
   background-color: #756257;
