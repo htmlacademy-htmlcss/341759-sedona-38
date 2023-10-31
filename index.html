@@ -16,7 +16,7 @@
 
           <ul class="navigation_list">
             <li class="navigation_item">
-              <a class="navigation_link navigation_link_current" href="index.html">Главная</a>
+              <a class="navigation_link navigation_link_current">Главная</a>
             </li>
             <li class="navigation_item">
               <a class="navigation_link" href="about.html">О седоне</a>
@@ -26,19 +26,23 @@
             </li>
           </ul>
         </nav>
-        <ul class="navigation_list navigation_user">
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">
+        <ul class="navigation_user">
+          <li class="navigation_user_item">
+            <a class="navigation_user_link" href="#">
               <span class="visually_hidden">Поиск</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path  d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"/></svg>
             </a>
           </li>
-          <li class="navigation_item">
-            <a class="navigation_link" href="#">
+          <li class="navigation_user_item">
+            <a class="navigation_user_link" href="#">
               <span class="visually_hidden">Избранное</span>
+              <span class="favorites">12</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path  d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
+
             </a>
           </li>
-          <li class="navigation_item">
-            <a class="navigation_link button bright_accent" href="#">Хочу сюда!</a>
+          <li class="navigation_user_item">
+            <a class="navigation_user_link button bright_accent" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </header>
@@ -104,14 +108,14 @@
           <h2 class="visually_hidden">Поиск гостиниц в Седоне</h2>
           <h3 class="tagline">Заинтересовались?</h3>
           <p class="description">Укажите предполагаемые даты поездки, <br/>и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
-          <a class="button bright_accent" href="catalog.html" >Поиск гостиниц в Седоне</a>
+          <a class="button bright_accent" href="catalog.html">Поиск гостиниц в Седоне</a>
         </section>
         <section class="subscribe">
           <h2 class="tagline subscribe_tagline">Подпишитесь на&nbsp;рассылку</h2>
           <p class="description">Только полезная информация и&nbsp;никакого спама, <br/>честное бойскаутское!</p>
           <form class="subscription_form" action="https://echo.htmlacademy.ru/" method="post" >
             <label class="visually_hidden" for="user_email">Ваш e-mail</label>
-            <input type="email" id="user_email" name="subscription_email" placeholder="Ваш e-mail" >
+            <input class="field" type="email" id="user_email" name="subscription_email" placeholder="Ваш e-mail" >
             <button class="button subscribe_button brend_color" type="submit"> Подписаться </button>
           </form>
         </section>
@@ -152,6 +156,49 @@
           </a>
         </section>
       </footer>
+    </div>
+    <div class="modal_container modal_container_close">
+      <div class="modal modal_auth">
+        <button class="modal_close_button">
+          <span class="visually_hidden">Закрыть</span>
+        </button>
+        <section class="modal_content">
+          <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
+          <form class="modal_form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group modal_form_date">
+
+                <label class="form-label" for="appointment-date">
+                  Дата заезда:</label>
+
+
+              <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
+            </p>
+            <p class="field-group modal_form_date">
+
+              <label class="form-label" for="appointment-date">
+                Дата выезда:</label>
+
+
+            <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
+          </p>
+
+            <p class="field-group ">
+              <label class="form-label" type="number" for="adult">
+                Взрослые
+              </label>
+              <input class="field" type="text" id="adult" name="adult-phone" placeholder="+7 800 000-00-00">
+            </p>
+            <p class="field-group ">
+              <label class="form-label" type="number" for="adult">
+                Дети:
+              </label>
+              <input class="field" type="text" id="adult" name="adult-phone" placeholder="+7 800 000-00-00">
+            </p>
+
+            <button class="button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
 
 
