@@ -1544,8 +1544,8 @@ body {
 
 .tooltip {
   position: absolute;
-  margin-top: 0;
-  padding-left: 58px;
+  margin-top: -5px;
+  left: 65%;
   width: 26px;
   height: 26px;
 }
@@ -1579,7 +1579,7 @@ body {
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-39%);
+  transform: translateX(-51%);
   background-color: #333333;
   color: #ffffff;
   font-size: 16px;
@@ -1625,5 +1625,5 @@ body {
 }
 
 .modal_container_close {
-  display: none;
+  /* display: none; */
 }
