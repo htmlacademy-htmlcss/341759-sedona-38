@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="icon" href="images/favicon.png" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -18,7 +18,7 @@
               <a class="navigation_link" href="index.html">Главная</a>
             </li>
             <li class="navigation_item">
-              <a class="navigation_link" href="about.html">О седоне</a>
+              <a class="navigation_link" href="about.html">О Седоне</a>
             </li>
             <li class="navigation_item">
               <a class="navigation_link navigation_link_current ">Гостиницы</a>
@@ -37,7 +37,6 @@
               <span class="visually_hidden">Избранное</span>
               <span class="favorites">12</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path  d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
-
             </a>
           </li>
           <li class="navigation_user_item">
@@ -55,7 +54,6 @@
                 <a class="breadcrumbs_link breadcrumbs_indax" href="index.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none"><path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
                   <span class="visually_hidden">Главная</span>
-
                 </a>
               </li>
               <li class="breadcrumbs_item">
@@ -94,7 +92,7 @@
             </fieldset>
 
             <fieldset class="catalog_filter_group catalog_filter_house">
-              <legend class="catalog_filter_title">Тип жилья:</legend>
+              <legend class="catalog_filter_title">Тип Жилья:</legend>
               <ul class="catalog_filter_list">
                 <li class="catalog_filter_item">
                   <label class="control">
@@ -106,7 +104,7 @@
                 <li class="catalog_filter_item">
                   <label class="control">
                     <input class="control_input visually_hidden" type="radio" name="House_type" value="Motel">
-                    <span class="control_mark_radio"></span>
+                    <span class="control_mark_radio" ></span>
                     <span class="control_label">Мотель</span>
                   </label>
                 </li>
@@ -133,9 +131,8 @@
                     <span class="range_input_from">до</span>
                   </label>
                 </div>
-
                 <div class="range_scale">
-                  <div class="range_bar" style="left: 0px; width: 226px">
+                  <div class="range_bar" style="left: 0; width: 226px">
                     <button class="range_toggle toggle_min" type="button">
                       <span class="visually_hidden">Изменить минимальную цену</span>
                     </button>
@@ -144,21 +141,15 @@
                     </button>
                   </div>
                 </div>
-
-
               </div>
             </fieldset>
-
-
 
             <div class="button_filter">
               <button class="button brend_color" type="submit">Применить</button>
               <button class="button" type="reset">Сбросить</button>
             </div>
-
           </form>
         </section>
-
 
         <section class="catalog">
           <div class="wrapper_sorting">
@@ -180,7 +171,6 @@
                   <span class="visually_hidden">Показать список</span>
                 </a>
               </div>
-
             </div>
           </div>
 
@@ -209,7 +199,7 @@
               <span class="card_name">Гостиница</span>
               <span class="card_price">От 5000 ₽</span>
               <a class="button button_more_details bright_accent" href="#">Подробнее</a>
-              <button class="button button_favorites action_color" type="submit">В избранное</button>
+              <button class="button button_favorites action_color" type="submit">В избранном</button>
               <img class="stars" src="images/star_4.svg" alt="Четырехзвездочный отель">
               <p class="rating">Рейтинг: 9,2</p>
             </li>
@@ -266,7 +256,7 @@
         </section>
         <section class="subscribe_inner">
           <h2 class="tagline">Подпишитесь на&nbsp;рассылку</h2>
-          <p class="description">Только полезная информация и&nbsp;никакого спама, <br/>честное бойскаутское!</p>
+          <p class="description">Только полезная информация и&nbsp;никакого спама, <br>честное бойскаутское!</p>
           <form class="subscription_form" action="https://echo.htmlacademy.ru/" method="post" >
             <label class="visually_hidden" for="user_email">Ваш e-mail</label>
             <input class="field" type="email" id="user_email" name="subscription_email" placeholder="Ваш e-mail" >
@@ -311,7 +301,5 @@
         </section>
       </footer>
     </div>
-
-
   </body>
 </html>
