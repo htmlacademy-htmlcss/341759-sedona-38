@@ -198,6 +198,7 @@ body {
 }
 
 .navigation_user_link {
+  position: relative;
   min-width: 20px;
   min-height: 20px;
 }
@@ -232,7 +233,7 @@ body {
   fill: #000000;
 }
 
-.navigation_user_item:nth-child(1) .navigation_user_link {
+.navigation_search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +251,7 @@ body {
   fill: #615048;
 }
 
-.navigation_user_item:nth-child(2) .navigation_user_link {
+.navigation_favorites {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1190,7 +1191,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
-  min-width: 350px;
+  max-width: 400px;
 }
 
 .sorting {
